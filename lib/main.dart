@@ -11,10 +11,8 @@ class MyApp extends StatelessWidget{
   var questionIndex=0;
   
   void answerQuestion(){
-    Fluttertoast.showToast(msg:'The button is clicked !',
-    toastLength: Toast.LENGTH_SHORT,
-    gravity: ToastGravity.BOTTOM,
-    timeInSecForIosWeb: 1,);
+   questionIndex=questionIndex+1;
+   print(questionIndex);
   }
 
 
