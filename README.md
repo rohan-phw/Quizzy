@@ -1,6 +1,6 @@
-# first_test
+# Quizzy
 
-A new Flutter project.
+A test quiz app made in flutter and dart.
 
 ## Getting Started
 
