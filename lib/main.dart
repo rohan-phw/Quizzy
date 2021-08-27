@@ -7,10 +7,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget{
+
+  var questionIndex=0;
+  
   void answerQuestion(){
     Fluttertoast.showToast(msg:'The button is clicked !',
     toastLength: Toast.LENGTH_SHORT,
-    gravity: ToastGravity.CENTER,
+    gravity: ToastGravity.BOTTOM,
     timeInSecForIosWeb: 1,);
   }
 
@@ -27,18 +30,19 @@ class MyApp extends StatelessWidget{
         ),
       body: Column(
         children: <Widget>[
-          Text('The Question !'),
+          Text(questions[0],
+          ),
           RaisedButton(
             child: Text('Answer 1'), 
           onPressed: answerQuestion,
           ),
           RaisedButton(
             child: Text('Answer 2'), 
-          onPressed: null,
+          onPressed: answerQuestion,
           ),
           RaisedButton(
             child: Text('Answer 3'), 
-          onPressed: null,
+          onPressed: answerQuestion,
           ),
         ],
         ),
